@@ -1,0 +1,38 @@
+.btn {
+    float: right;
+}
+
+.menu {
+    position: fixed;
+    display: none;
+    width: 20%;
+    height: 100vh;
+    left: 100%;
+    background-color: aquamarine;
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0.5;
+        left: 100%
+    }
+    to{
+        opacity: 1;
+        left: 76%;
+    }
+}
+
+.menu-animation {
+    display: block;
+    animation-name: slideRight;
+    animation-duration: 5s;
+    left: 76%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0, 0.5);
+}
